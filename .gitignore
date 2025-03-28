@@ -1,0 +1,8 @@
+dist/*
+node_modules/
+src/artifacts/*
+.env
+coverage/*
+.DS_Store
+logs/*
+*.bak

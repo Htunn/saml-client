@@ -1,0 +1,67 @@
+{
+  "clientId": "http://localhost:3005/metadata.xml",
+  "name": "saml-client",
+  "description": "",
+  "rootUrl": "",
+  "adminUrl": "",
+  "baseUrl": "",
+  "surrogateAuthRequired": false,
+  "enabled": true,
+  "alwaysDisplayInConsole": false,
+  "clientAuthenticatorType": "client-secret",
+  "redirectUris": [
+    "http://localhost:3005/acs"
+  ],
+  "webOrigins": [
+    "http://localhost:3005"
+  ],
+  "notBefore": 0,
+  "bearerOnly": false,
+  "consentRequired": false,
+  "standardFlowEnabled": true,
+  "implicitFlowEnabled": false,
+  "directAccessGrantsEnabled": true,
+  "serviceAccountsEnabled": false,
+  "publicClient": true,
+  "frontchannelLogout": true,
+  "protocol": "saml",
+  "attributes": {
+    "saml.assertion.signature": "false",
+    "saml_single_logout_service_url_post": "http://localhost:3005/acs",
+    "saml.force.post.binding": "true",
+    "saml.encrypt": "false",
+    "post.logout.redirect.uris": "http://localhost:3005/acs",
+    "saml_assertion_consumer_url_post": "http://localhost:3005/acs",
+    "saml.server.signature": "true",
+    "saml.server.signature.keyinfo.ext": "false",
+    "saml.signing.certificate": "MIICnzCCAYcCBgGRtxCCtzANBgkqhkiG9w0BAQsFADATMREwDwYDVQQDDAhzYW1sLWFwcDAeFw0yNDA5MDMwODQ0NThaFw0zNDA5MDMwODQ2MzhaMBMxETAPBgNVBAMMCHNhbWwtYXBwMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAplGePGaGIb6RMAQpzXWy1rLFrkxr+HIEMCs69guabQl5QjW2cjTxrIQmUksztW/SSEecFesz6DvjmEcLwal5pYkUcnLCtzbS7lmtbpxqPXmJgaHlhGDaxtqtndstGsDCKSnjRUI10Y2HizrkhS3xLkVQW7uKh3YuvorBBSUAKJnBtL9jmFnYQhVS/aX1TyAg43lEfRp5JSKTI7un9DjKYmDTy9lNsqpK1/0abKLVf3iCC0JT7ThEbkHfatjnmk6f1Ztq2FnxI8DzVycqTTmNjn6hQVzkZ9hNOMOBGtDP659QGgkLe0F9vECqFdavDmnx+Ir8fj3hQBPkRwgbHJmULQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQBSYS10sslu3xkAieJb7G/nPDjJp8p1bDthE1dIlZ7AXnZYkehCYfe4rmetxuodYIi5uPtmGTvfMlQzTFvhjMAWjuqGzg2UCOXJroQCnCb2QjriYU2IoUDXfFT0qv2sOPFIKFHIOG8rdO1O7Z3ExZjIf1uEFpb2eME3ljZRo/7bh7wvtyM9HZ0YCVOzDUGuxKu+fsuMiPSBhhMAPqem5Wx8fRsfIJ76ma49ZevvPM5EFfo01ECbxdN+KPpQiS1MeyJBdbUgLEicJ5KcW4Yn+R7PACRqULcsYFxkRAiYfukUnF25Gdlc3k7hZAeN7GXQ2bs8dXlRPExST6G7r3owol4M",
+    "saml.artifact.binding.identifier": "plwZoloq1vqrKQhmJ65iwwOBTRI=",
+    "saml.artifact.binding": "false",
+    "saml.signature.algorithm": "RSA_SHA256",
+    "saml_force_name_id_format": "false",
+    "saml.client.signature": "true",
+    "saml.authnstatement": "true",
+    "display.on.consent.screen": "false",
+    "saml.assertion.lifespan": "600",
+    "saml_name_id_format": "username",
+    "saml.signing.private.key": "MIIEowIBAAKCAQEAplGePGaGIb6RMAQpzXWy1rLFrkxr+HIEMCs69guabQl5QjW2cjTxrIQmUksztW/SSEecFesz6DvjmEcLwal5pYkUcnLCtzbS7lmtbpxqPXmJgaHlhGDaxtqtndstGsDCKSnjRUI10Y2HizrkhS3xLkVQW7uKh3YuvorBBSUAKJnBtL9jmFnYQhVS/aX1TyAg43lEfRp5JSKTI7un9DjKYmDTy9lNsqpK1/0abKLVf3iCC0JT7ThEbkHfatjnmk6f1Ztq2FnxI8DzVycqTTmNjn6hQVzkZ9hNOMOBGtDP659QGgkLe0F9vECqFdavDmnx+Ir8fj3hQBPkRwgbHJmULQIDAQABAoIBAAMwzSWQ/PFAR+ZBKjEiGSZzwwWTOz4Gp+xpo+Ws9s8xL5WU1LVvrRQ3a8nH3gvUw5a14vlrq/EAVx8oe8IBF4+Up+MDLxeXMmg2qbRVxVb9EiV9vtqxhfjrIIoG9qBNAtyJzG2bdc9ZlPhXjqM8bKRL2Z0M5b0wB/kJTecknNJqisD5DuTonCeSWSMjXFS0nKd3GK5jwJ1PM6R8TZ+A5T9eCuuccMYhW0VfFsbGP7ZutPZCMHZbt1+3AqYPVMxkdr5n8HQq/5gp5tzMFEO+Lya0HtP5OzpVgvWPshefpfmGhzwwbMXuf9PwXc1M/dalI03iA552vdz4HURH43V0EIkCgYEA4d7w5KrUgijCtVGqVF09T2z5Wp/t2pmTlhr6+qowO1M0xe19arhNEBwxRXtuVsvC2XSnnFCw5UnTMaX56UxK7jTmRnDV1wJTS+Ys0wmW/kx01JZktZbHsnxC74OsS2crky0XCZNB9RzwqJSa9wG+J/k9VmZNMuvQd5oWW57McGUCgYEAvIEWp6iLR4DPv4a4l+vXCXFBoJBfXtnJIaXBAtk5h2vCeFR8fTR4iNNxzVWVhaOW1O7xuCllkxREqMQckOpxNpEK5PSILAQbpCSU7Q/tGxC1CWDKBawcM7C2MOh9h7Bh3kZaN5bM7rLsFOqY5a7oyIRNswceesVGyX8MK3ESBCkCgYAG8PD6Nf292j7Rj6bqXMsri6/GBzAqDZopfL7FwUEmMZJnmrrF8s/7dMJW3kovxKdCQ4F7HkexZClnVzBs6PlMhLem5oTLzLh+lp4+Bgdr3TGh7tU9d1q/s23jKmq7DnqaVUJl+u6F99O1eougl58eX1xxMUeiDvkjE8soGaMyuQKBgQCg6i11t8oVot81ZwLjJT8u31CfiT7wkEdDAuUN0nNqp9GduLmAhC801hM6rolySGC0qrkLdcMw18d4rdiY2JkGdLBxHFG2CVezOksrR0InrY5tUAOE7hQxB/OvMngeQbJ59WKEO6X7Sh+AB3e38iTjLxXI8xXQxeEUlvDDkMVJaQKBgAr5wtZfknhB4IREJ5Dpv+1E9fzeNFUP6HU5fVLRbMvivDgStEqIfG+ax6ByQGbPDz69kxVFjdg8Vv3UwCX5g9dhNLDdgHcaAipYlKhsZlOoyWnEZChBpbVrHn31DjjSoM99Op3Z3LMwAlrky/qM+CBTuAu7jClZxgDNQPVkNMxf",
+    "saml.allow.ecp.flow": "false",
+    "saml_signature_canonicalization_method": "http://www.w3.org/2001/10/xml-exc-c14n#",
+    "saml.onetimeuse.condition": "false",
+    "saml.server.signature.keyinfo.xmlSigKeyInfoKeyNameTransformer": "NONE"
+  },
+  "authenticationFlowBindingOverrides": {},
+  "fullScopeAllowed": true,
+  "nodeReRegistrationTimeout": -1,
+  "defaultClientScopes": [
+    "mail",
+    "displayName",
+    "group"
+  ],
+  "optionalClientScopes": [],
+  "access": {
+    "view": true,
+    "configure": true,
+    "manage": true
+  }
+}

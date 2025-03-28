@@ -1,0 +1,50 @@
+openapi: 3.0.0
+info:
+  title: SAML API
+  version: 1.0.0
+  description: API documentation for the SAML service
+servers:
+  - url: /
+paths:
+  /login:
+    get:
+      summary: SAML Login
+      description: Initiates the SAML login process.
+      responses:
+        '200':
+          description: Redirect to the SAML login page.
+  /acs:
+    post:
+      summary: Assertion Consumer Service
+      description: Handles the SAML response from the Identity Provider.
+      requestBody:
+        required: true
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                SAMLResponse:
+                  type: string
+                  description: The SAML response from the Identity Provider.
+      responses:
+        '200':
+          description: Successfully processed the SAML response.
+  /metadata:
+    get:
+      summary: SAML Metadata
+      description: Provides the SAML metadata for the Service Provider.
+      responses:
+        '200':
+          description: SAML metadata in XML format.
+          content:
+            application/xml:
+              schema:
+                type: string
+  /logout:
+    post:
+      summary: SAML Logout
+      description: Initiates the SAML logout process.
+      responses:
+        '200':
+          description: Redirect to the SAML logout page.
